@@ -5,4 +5,4 @@ services:
       - "8080:8080"
       - "9000:9000"
     volumes:
-      - $HOME/flipt:/var/opt/flipt
+      - ./flipt:/var/opt/flipt
