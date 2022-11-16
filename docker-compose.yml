@@ -20,3 +20,10 @@ services:
       - "9000:9000"
     environment:
       - FLIPT_DB_URL="postgres://postgres@localhost:5432/flipt?sslmode=disable"
+
+volumes:
+  db-data:
+
+networks:
+  front-tier:
+  back-tier:
