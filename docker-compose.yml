@@ -18,3 +18,5 @@ services:
     ports:
       - "8080:8080"
       - "9000:9000"
+    environment:
+      - FLIPT_DB_URL="postgres://postgres@localhost:5432/flipt?sslmode=disable"
