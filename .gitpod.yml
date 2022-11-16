@@ -1,0 +1,19 @@
+tasks:
+  - name: Remix App
+    init: |
+      cd incredible-website
+      npm i
+
+    command: |
+      cd incredible-website
+      npm run dev
+
+  - name: Docker Compose
+    command: docker-compose -f docker-compose.yml up
+    openMode: split-right
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+  - port: 3000 # website
+    onOpen: open-preview
