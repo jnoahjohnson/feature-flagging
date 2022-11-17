@@ -13,7 +13,11 @@ tasks:
     openMode: split-right
 
 ports:
-  - port: 8080
-    onOpen: open-preview
   - port: 3000 # website
     onOpen: open-preview
+  - port: 8080 # flipt
+    onOpen: open-preview
+  - port: 8002
+    onOpen: ignore
+  - port: 9000
+    onOpen: ignore
